@@ -1,8 +1,28 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="app">
+    <v-app>
+      <v-content>
+          <tool-bar></tool-bar>
+          <nuxt />
+          <footer-bar class="footer"></footer-bar>
+      </v-content>
+    </v-app>
   </div>
 </template>
+
+
+
+<script>
+import ToolBar from '~/components/ToolBar.vue'
+import FooterBar from '~/components/FooterBar.vue'
+export default {
+  name: 'App',
+  components: {
+    ToolBar,
+    FooterBar,
+  }
+}
+</script>
 
 <style>
 html {
@@ -52,4 +72,25 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+.section-title {
+  margin-bottom: 64px;
+}
+.section {
+  margin-bottom: 136px;
+}
+.contact-section {
+  margin-bottom: 54px;
+}
+.footer {
+  margin-bottom: 32px;
+}
+
 </style>
