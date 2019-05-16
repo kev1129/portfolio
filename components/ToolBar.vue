@@ -12,30 +12,40 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="tool-bar__items">
-      <v-btn
-        flat
-        v-scroll-to="'#about'"
-      >
-          About me
-      </v-btn>
-      <v-btn
-        flat
-        v-scroll-to="'#skills'"
-      >
-          Skills
-      </v-btn>
-      <v-btn
-        flat
-        v-scroll-to="'#portfolio'"
-      >
-          Portfolio
-      </v-btn>
-      <v-btn
-        flat
-        v-scroll-to="'#contact'"
-      >
-          Contact
-      </v-btn>
+      <v-layout row wrap align-center justify-center>
+        <v-flex>
+          <v-btn
+            flat
+            v-scroll-to="'#about'"
+          >
+              About me
+          </v-btn>
+        </v-flex>
+        <v-flex>
+          <v-btn
+            flat
+            v-scroll-to="'#skills'"
+          >
+              Skills
+          </v-btn>
+        </v-flex>
+        <v-flex>
+          <v-btn
+            flat
+            v-scroll-to="'#portfolio'"
+          >
+              Portfolio
+          </v-btn>
+        </v-flex>
+        <v-flex>
+          <v-btn
+            flat
+            v-scroll-to="'#contact'"
+          >
+              Contact
+          </v-btn>
+        </v-flex>
+      </v-layout>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -50,14 +60,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.tool-bar__logo {
+  font-weight: bold;
+}
 @media (max-width: 760px) {
   .tool-bar__logo {
     display: none;
-  }
-}
-@media (max-width: 430px) {
-  .tool-bar {
-    display: none;
-  }
+    }
 }
 </style>

@@ -22,13 +22,6 @@
       v-bind:skill-icons="skillIcons"
     >
     </skill-icons>
-    <v-list-tile>
-      <v-list-tile-content
-        class="align-start"
-      >
-        {{skillDescription}}
-      </v-list-tile-content>
-    </v-list-tile>
     <v-list-tile
       v-for="(item, index) in skillInfomation"
       v-bind:key="index"
@@ -56,8 +49,9 @@ export default {
     skillDescription: String,
     skillInfomation: {
       name: String,
-      year: String
-    }
+      year: Number
+      // year: Number
+    },
   }
 }
 </script>

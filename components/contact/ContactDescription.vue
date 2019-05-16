@@ -1,9 +1,12 @@
 <template>
-  <base-description
+  <!-- <base-description
     v-bind:gettingDescription="description"
     class="text"
   >
-  </base-description>
+  </base-description> -->
+  <div class="description">
+    <p>Mailまたは Messenger にてお気軽にご連絡下さい。</p>
+  </div>
 </template>
 
 <script>

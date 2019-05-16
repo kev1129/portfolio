@@ -3,7 +3,7 @@
     <v-parallax
       class="parallax"
       v-bind:src="imageurl"
-      height="300"
+      height="500"
     >
       <v-layout
         align-center
@@ -39,6 +39,6 @@ export default {
 
 <style lang="scss" scoped>
 .section-title {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 </style>

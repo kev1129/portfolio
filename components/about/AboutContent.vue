@@ -1,32 +1,16 @@
 <template>
   <v-item-group>
-    <v-container
-      grid-list-xl
-    >
-      <v-layout
-        wrap
-        align-start
-        justify-center
-      >
-        <v-flex
-          xs10
-          sm10
-          md6
-        >
+    <v-container grid-list-xl>
+      <v-layout wrap align-center justify-center row>
+        <v-flex xs10 sm10 md6>
           <v-item>
             <about-image></about-image>
           </v-item>
         </v-flex>
-        <v-flex
-          xs10
-          sm8
-          md6
-        >
+        <v-flex xs10 sm8 md6>
           <v-item>
             <div>
-              <about-subtitle
-                class="my-name"
-              >
+              <about-subtitle class="my-name">
               </about-subtitle>
               <about-description></about-description>
                 <base-sns></base-sns>

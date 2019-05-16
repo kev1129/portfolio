@@ -5,8 +5,8 @@
     <v-layout
       row
       wrap
-      align-center
-      justify-center
+      align-start
+      justify-start
     >
       <v-flex
         v-for="(card, index) in cards"
@@ -36,29 +36,31 @@ export default {
   },
   data () {
     return {
+      a: '10',
       cards: [
         { title: 'コーディング',
           skillIcons: [
             {name: 'HTML5', class: 'fa-html5'},
-            {name: 'CSS3', class: 'fa-css3'}
+            {name: 'CSS3', class: 'fa-css3'},
+            {name: 'SASS', class: 'fa-sass'}
           ],
-          description: 'レスポンシブ化対応もします。',
           skillInfomation: [
-            {name: 'HTML5', year: '5 months'},
-            {name: 'CSS3', year: '5 months'},
+            {name: 'HTML5', year: '7 months'},
+            {name: 'CSS3', year: '7 months'},
+            {name: 'SASS', year: '4 months'},
             {name: '', year: ''}
           ]
         },
-        { title: 'フロントエンド',
+        {title: 'フロントエンド',
           skillIcons: [
             {name: 'JavaScript', class: 'fa-js'},
             {name: 'Vue.js', class: 'fa-vuejs'}
           ],
-          description: 'このページはVue.jsで作りました。',
           skillInfomation: [
-            {name: 'JavaScript', year: '3 months'},
-            {name: 'jQuery', year: '2 months'},
-            {name: 'Vue.js', year: '1 months'}
+            {name: 'JavaScript', year: '4 months'},
+            {name: 'jQuery', year: '4 months'},
+            {name: 'Vue.js', year: '3 months'},
+            {name: 'Nuxt.js', year: '2 months'}
           ]
         },
         { title: 'バックエンド',
@@ -66,15 +68,25 @@ export default {
             {name: 'PHP', class: 'fa-php'},
             {name: 'Laravel', class: 'fa-laravel'}
           ],
-          description: 'レシピ、Todoアプリを作りました。',
           skillInfomation: [
-            {name: 'PHP', year: '3 months'},
-            {name: 'Laravel', year: '2 months'},
-            {name: 'MySQL', year: '2 months'}
+            {name: 'PHP', year: '5 months'},
+            {name: 'Laravel', year: '4 months'},
+            {name: 'MySQL', year: '5 months'},
+            {name: '', year: ''}
           ]
-        }
+        },
+        { title: 'Others',
+          skillIcons: [
+            {name: 'Python', class: 'fa-python'},
+            {name: 'Github', class: 'fa-github'}
+          ],
+          skillInfomation: [
+            {name: 'Python', year: '1 months'},
+            {name: 'Github', year: '5 months'},
+          ]
+        },
       ]
     }
-  }
+  },
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div>
-      <contact-description></contact-description>
-      <contact-toolicon></contact-toolicon>
+      <contact-description class="desc"></contact-description>
+      <contact-toolicon class="tool"></contact-toolicon>
     </div>
 </template>
 
@@ -16,3 +16,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.desc {
+  margin-bottom: 32px;
+}
+</style>
+

@@ -20,7 +20,6 @@
           v-bind:description="card.description"
           v-bind:imageurl="card.imageurl"
           v-bind:link="card.link"
-          v-bind:linkGit="card.linkGit"
         >
         </portfolio-card>
       </v-flex>
@@ -41,15 +40,21 @@ export default {
       cards: [
         { title: 'Portfolio site',
           imageurl: 'images/portfolio.jpg',
-          description: 'Webエンジニアとしての、ポートフォリオサイトを作りました。(このサイトです)\nVue.jsを使って作りました。',
+          description: 'Web制作に関わるポートフォリオサイトです。\nNuxt.jsで作られています。',
           link: '',
-          linkGit: 'https://github.com/kev1129/portfolio'
+          // linkGit: 'https://github.com/kev1129/portfolio'
         },
-        { title: '「パン工房 プクムク」のHP',
+        { title: 'パン工房 プクムク',
           imageurl: 'images/pukumuku.jpg',
-          description: '地元のアルバイト先のパン屋さんのホームページを作成させていただいています。\n現在作成中...',
-          link: '',
-          linkGit: 'https://github.com/kev1129/pukumuku'
+          description: 'アルバイト先のパン屋さんのホームページです。\nNuxt.jsで作られています。',
+          link: 'https://pankouboupukumuku.netlify.com/',
+          // linkGit: 'https://github.com/kev1129/pukumuku'
+        },
+        { title: '台湾料理のレシピ研究ブログ',
+          imageurl: 'images/taiwan.jpg',
+          description: '台湾料理のレシピを模索するブログです。\nWordPressで作られています',
+          link: 'https://shinadokebukawa.com/taiwan/',
+          // linkGit: 'https://github.com/kev1129/pukumuku'
         }
       ]
     }

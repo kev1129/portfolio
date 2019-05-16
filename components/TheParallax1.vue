@@ -1,10 +1,11 @@
 <template>
+<div class="parallax">
   <v-parallax
     id="top"
-    class="parallax"
+    class="parallax_img"
     :src="imageurl"
     height="600"
-    width="100%"
+    jumbotron
   >
     <v-layout
       align-center
@@ -15,25 +16,34 @@
       <h5 class="headline text">{{siteDescription}}</h5>
     </v-layout>
   </v-parallax>
+</div>
 </template>
 <script>
 export default {
   name: 'TheParallax1',
   data () {
     return {
-      imageurl: 'images/parallax4.jpg',
+      imageurl: 'images/parallax6.jpg',
       siteTitle: 'Kebukawa Shinado Portfolio',
-      siteDescription: 'As Web Engineer'
+      siteDescription: 'Portfolio of Web Engineer'
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.parallax {
-  padding: 0;
+.parallax img{
+  height: 100%;
+  object-fit: cover;
 }
+// .parallax_img {
+//   padding: 0;
+//   height: 100vh;
+//   transform: none !important;
+//   width: 100vw !important;
+//   // width: 100%;
+// }
 .text {
-  color: #191970;
+  color: #fff;
 }
 </style>

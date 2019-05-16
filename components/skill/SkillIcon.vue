@@ -1,13 +1,16 @@
 <template>
-  <div>
-    <i
-      class="fab sns__icon"
-      v-bind:class="skillClass"
-    >
-    </i>
-    <br>
-    <span class="skill-name">{{skillName}}</span>
-  </div>
+  <v-layout align-center justify-center column>
+    <v-flex>
+      <i
+        class="fab sns__icon"
+        v-bind:class="skillClass"
+      >
+      </i>
+    </v-flex>
+    <v-flex>
+      <span class="skill-name">{{skillName}}</span>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>

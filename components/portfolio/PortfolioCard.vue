@@ -28,6 +28,9 @@
             class="description"
           >
           </base-description>
+          <v-card-actions class="actions">
+            <a :href="link" target="_brank"><v-btn color="info" class="btn">JUMP</v-btn></a>
+          </v-card-actions>
         </v-layout>
       </div>
     </v-card-title>
@@ -85,7 +88,7 @@ export default {
     text-decoration: none;
   }
 }
-.hover {
-  width: 80%;
+.btn {
+  border-radius: 50px;
 }
 </style>

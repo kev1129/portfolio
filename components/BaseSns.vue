@@ -14,7 +14,7 @@
       text-left
       target="_brank"
     >
-      <i class="fab fa-border sns__icon" v-bind:class="icon.class"></i>
+      <i class="fab sns__icon" v-bind:class="icon.class"></i>
     </a>
   </v-flex>
 </div>
@@ -26,8 +26,10 @@ export default {
   data () {
     return {
       icons: [
+        {class: 'fa-linkedin-in', link: 'https://www.linkedin.com/in/%E9%A2%A8-%E6%AF%9B%E9%83%A8%E5%B7%9D-754951185/'},
         {class: 'fa-instagram', link: 'https://www.instagram.com/shinado1998/?hl=ja'},
         {class: 'fa-facebook', link: 'https://www.facebook.com/profile.php?id=100009639289112'},
+        {class: 'fa-twitter', link: 'https://twitter.com/shinadokebukawa'},
         {class: 'fa-github', link: 'https://github.com/kev1129'}
       ]
     }
@@ -37,25 +39,20 @@ export default {
 <style lang="scss" scoped>
 .sns-box {
   text-align: left;
-  margin-left: -16px;
+  margin-left: 2px;
 .sns {
   display: inline-block;
-  margin-right: 16px;
   .sns__link {
     text-decoration: none;
     color: #000;
     text-align: left;
 
     .sns__icon {
-      font-size: 2.4rem;
-    }
-    .fa-border {
-      border: 0.1rem solid rgba(0,0,0,0.8);
-      border-radius: 50%;
+      font-size: 1.8rem;
     }
     .sns__icon:hover {
       opacity: 0.3;
-      transition: 0.2s ease;
+      transition: 0.1s ease;
     }
   }
 }
@@ -64,10 +61,8 @@ export default {
 @media (max-width: 960px) {
   .sns-box {
     text-align: center;
-    margin-left: -24px;
     .sns {
       margin: auto;
-      margin-right: 24px;
     }
   }
 }
