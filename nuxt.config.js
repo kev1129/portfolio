@@ -1,4 +1,5 @@
 import pkg from './package'
+// var HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
 
 export default {
   mode: 'universal',
@@ -42,8 +43,14 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src :'~/plugins/vue-parallax-js'},
+    // new HardSourceWebpackPlugin()
   ],
 
+  router: {
+    base: '/portfolio/'
+  },
+  
   /*
   ** Nuxt.js modules
   */
