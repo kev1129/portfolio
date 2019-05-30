@@ -16,8 +16,6 @@
       <h5 class="headline text">{{siteDescription}}</h5>
     </v-layout>
   </v-parallax>
-
-<h1 v-parallax="0.2">vue-parallax-js</h1>
 </div>
 </template>
 <script>

@@ -42,13 +42,13 @@ export default {
           skillIcons: [
             {name: 'HTML5', class: 'fa-html5'},
             {name: 'CSS3', class: 'fa-css3'},
-            {name: 'SASS', class: 'fa-sass'}
           ],
           skillInfomation: [
-            {name: 'HTML5', year: '7 months'},
-            {name: 'CSS3', year: '7 months'},
+            {name: 'HTML5', year: '8 months'},
+            {name: 'CSS3', year: '8 months'},
             {name: 'SASS', year: '4 months'},
-            {name: '', year: ''}
+            {name: 'Bulma', year: '2 months'},
+            {name: 'Bootstrap', year: '4 months'}
           ]
         },
         {title: 'フロントエンド',
@@ -57,8 +57,8 @@ export default {
             {name: 'Vue.js', class: 'fa-vuejs'}
           ],
           skillInfomation: [
-            {name: 'JavaScript', year: '4 months'},
-            {name: 'jQuery', year: '4 months'},
+            {name: 'JavaScript', year: '5 months'},
+            {name: 'jQuery', year: '5 months'},
             {name: 'Vue.js', year: '3 months'},
             {name: 'Nuxt.js', year: '2 months'}
           ]
@@ -72,7 +72,6 @@ export default {
             {name: 'PHP', year: '5 months'},
             {name: 'Laravel', year: '4 months'},
             {name: 'MySQL', year: '5 months'},
-            {name: '', year: ''}
           ]
         },
         { title: 'Others',
@@ -83,6 +82,7 @@ export default {
           skillInfomation: [
             {name: 'Python', year: '1 months'},
             {name: 'Github', year: '5 months'},
+            {name: 'WordPress', year: '1 months'},
           ]
         },
       ]
